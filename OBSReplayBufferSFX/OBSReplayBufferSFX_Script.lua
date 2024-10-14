@@ -42,7 +42,7 @@ function on_event(event)
         playsound(AUDIO_FILE_ERROR)
     end
 end
--- handle OBS frontend events
+-- load the script and add event callback
 function script_load(settings)
     obs.obs_frontend_add_event_callback(on_event)
 end
